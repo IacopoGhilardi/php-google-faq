@@ -10,23 +10,95 @@ body {
     font-size: 16px;
     font-family: 'Roboto', sans-serif;
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
+header {
+    width: 100%;
+    padding: 20px 20px 0px 10px;
+    border-bottom: .5px solid #5f6368;
+}
 
-.container {
+.logo-login {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.logo a,
+.logo span {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.logo span {
+    margin-left: 10px;
+    font-size: 1.3rem;
+    color: #5f6368;
+}
+
+.login {
+    width: 10%;
+    display: flex;
+}
+
+.login img {
+    width: 40px;
+    height: 40px;
+    margin-left: 50%;
+}
+
+.navbar {
+    height: 50%;
+    padding: 10px 0;
+}
+
+.navbar ul {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding-left: 10px;
+    font-size: 15px;
+}
+
+.navbar ul li:not(:last-child) {
+    margin-right: 40px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #5f6368;
+    font-weight: 700;
+}
+
+.question-container {
     width: 100%;
     max-width: 950px;
 }
 
 .question {
+    padding-top: 15px;
     line-height: 24px;
 }
 
 .question h2 {
     font-family: 'Google Sans',sans-serif;
+    font-weight: 500;
     font-size: 24px;
     padding-top: 30px;
+    line-height: 32px;
 }
 
 .question p {

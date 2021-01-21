@@ -13,7 +13,7 @@
 
                     "Quando cerchi un nome, potresti trovare una notifica in cui viene spiegato che i risultati potrebbero essere stati modificati nel rispetto delle leggi europee per la protezione dei dati. Mostriamo questa notifica agli utenti europei quando cercano la maggior parte dei nomi, non soltanto le pagine che sono state soggette a una rimozione."
 
-                        ]
+                    ]
         ],
         [
             "domanda" => "Come fa Google a proteggere la mia privacy e a tenere le mie informazioni al sicuro?",
@@ -53,7 +53,30 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="container">
+
+    <header>
+    <div class="logo-login">
+        <div class="logo">
+            <a href="#"><img src="https://www.gstatic.com/images/branding/googlelogo/svg/googlelogo_clr_74x24px.svg" alt="logo"></a>
+            <span>Privacy e termini</span>
+        </div>
+        
+        <div class="login">
+            <img src="https://www.peterbe.com/avatar.random.png" alt="login">
+        </div>
+    </div>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#">Introduzione</a></li>
+            <li><a href="#">Norme sulla privacy</a></li>
+            <li><a href="#">Termini di servizio</a></li>
+            <li><a href="#">Tecnologie</a></li>
+            <li class="active"><a href="#">Domande Frequenti</a></li>
+        </ul>
+    </nav>
+    </header>
+
+    <main class="question-container">
         <?php foreach ($faq as $question) { ?>
             <div class="question">
                 <h2><?php echo $question["domanda"] ?></h2>
@@ -62,8 +85,7 @@
                 <?php } ?>
             </div>
         <?php } ?>
-    </div>
-
+    </main>
 
 </body>
 </html>
